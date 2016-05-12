@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PopLax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,58 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cK3-JE-sEJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-Ht-GJp">
+                                <rect key="frame" x="228" y="259" width="144" height="81"/>
+                                <state key="normal" image="full"/>
+                                <connections>
+                                    <action selector="testPopDown:" destination="BYZ-38-t0r" eventType="touchDown" id="c5W-JA-h4h"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="full" translatesAutoresizingMaskIntoConstraints="NO" id="eDk-8g-jTV">
+                                <rect key="frame" x="255" y="360" width="90" height="81"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="7Zm-DJ-cTr"/>
+                                    <constraint firstAttribute="height" constant="81" id="sc9-kb-ZIo"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Nil-ZP-15M" appends="YES" id="d23-g3-fVW"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vMD-Ht-GJp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B7r-EK-zOL"/>
+                            <constraint firstItem="eDk-8g-jTV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="G5o-t4-Dnw"/>
+                            <constraint firstItem="vMD-Ht-GJp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GRn-ZH-xuC"/>
+                            <constraint firstItem="cK3-JE-sEJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VgU-01-nTn"/>
+                            <constraint firstItem="cK3-JE-sEJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="dIn-it-CXK"/>
+                            <constraint firstItem="eDk-8g-jTV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEv-Nf-3Ji"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cK3-JE-sEJ" secondAttribute="bottom" id="fOU-U1-Ioj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cK3-JE-sEJ" secondAttribute="trailing" constant="-20" id="jdr-9K-IRP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testPopButton" destination="vMD-Ht-GJp" id="2ZZ-AI-A52"/>
+                        <outlet property="testPopView" destination="eDk-8g-jTV" id="PmY-pa-lSA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Nil-ZP-15M">
+                    <connections>
+                        <action selector="longPress:" destination="BYZ-38-t0r" id="G4f-hD-WxL"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="164" y="406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="full" width="90" height="81"/>
+    </resources>
 </document>
