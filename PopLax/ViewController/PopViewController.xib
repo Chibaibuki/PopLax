@@ -8,6 +8,22 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopViewController" customModule="PopLax" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="popViews" destination="7P1-FU-KUo" collectionClass="NSMutableArray" id="6fY-cb-TNC"/>
+                <outletCollection property="popViews" destination="ypo-4L-UnQ" collectionClass="NSMutableArray" id="rB8-0p-mxA"/>
+                <outletCollection property="popViews" destination="9OC-Zk-ka7" collectionClass="NSMutableArray" id="eef-xX-RRm"/>
+                <outletCollection property="popViews" destination="4E3-UK-ygS" collectionClass="NSMutableArray" id="NeC-Aj-FPJ"/>
+                <outletCollection property="popViews" destination="i7Q-fp-nEZ" collectionClass="NSMutableArray" id="7Xu-d2-YRv"/>
+                <outletCollection property="popViews" destination="Ckf-BJ-IyF" collectionClass="NSMutableArray" id="4y2-06-Z05"/>
+                <outletCollection property="popViews" destination="gFs-rW-t6r" collectionClass="NSMutableArray" id="uLZ-SQ-3mS"/>
+                <outletCollection property="popViews" destination="kEc-KC-lKW" collectionClass="NSMutableArray" id="2lg-5g-Eug"/>
+                <outletCollection property="popViews" destination="WgT-3i-Fgo" collectionClass="NSMutableArray" id="8h7-rm-r6N"/>
+                <outletCollection property="popViews" destination="yqF-c6-qhN" collectionClass="NSMutableArray" id="qMq-CE-4B0"/>
+                <outletCollection property="popViews" destination="DUp-zI-Jyl" collectionClass="NSMutableArray" id="iif-ic-e47"/>
+                <outletCollection property="popViews" destination="st6-4I-VyS" collectionClass="NSMutableArray" id="AV6-2A-FkY"/>
+                <outletCollection property="popViews" destination="bx1-2e-kh6" collectionClass="NSMutableArray" id="uFC-Vm-liI"/>
+                <outletCollection property="popViews" destination="Fzq-EC-nhg" collectionClass="NSMutableArray" id="Y7P-gk-JhH"/>
+                <outletCollection property="popViews" destination="xvn-21-R7J" collectionClass="NSMutableArray" id="v3t-va-32A"/>
+                <outletCollection property="popViews" destination="3HJ-BI-HxT" collectionClass="NSMutableArray" id="6Z6-2g-bVX"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -129,6 +145,9 @@
                             <include reference="wyW-30-6zG"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="startRelaxClicked:" destination="-1" eventType="touchUpInside" id="mG0-bO-OQh"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

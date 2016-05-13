@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     }
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
 //        print(touches);
-        finTheTouch = true;
+
         
     }
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
