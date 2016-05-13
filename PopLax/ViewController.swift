@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MetalPerformanceShaders
 import AudioToolbox
 
 class ViewController: UIViewController {

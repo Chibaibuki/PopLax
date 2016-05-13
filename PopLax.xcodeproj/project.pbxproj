@@ -14,6 +14,8 @@
 		D58777F71CE4230600A15924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D58777F51CE4230600A15924 /* LaunchScreen.storyboard */; };
 		D58778021CE4230600A15924 /* PopLaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58778011CE4230600A15924 /* PopLaxTests.swift */; };
 		D587780D1CE4230600A15924 /* PopLaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D587780C1CE4230600A15924 /* PopLaxUITests.swift */; };
+		D587781C1CE614DE00A15924 /* PopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D587781A1CE614DE00A15924 /* PopViewController.swift */; };
+		D587781D1CE614DE00A15924 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D587781B1CE614DE00A15924 /* PopViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D58778081CE4230600A15924 /* PopLaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopLaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D587780C1CE4230600A15924 /* PopLaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopLaxUITests.swift; sourceTree = "<group>"; };
 		D587780E1CE4230600A15924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D587781A1CE614DE00A15924 /* PopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopViewController.swift; path = ViewController/PopViewController.swift; sourceTree = "<group>"; };
+		D587781B1CE614DE00A15924 /* PopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopViewController.xib; path = ViewController/PopViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				D58777F31CE4230600A15924 /* Assets.xcassets */,
 				D58777F51CE4230600A15924 /* LaunchScreen.storyboard */,
 				D58777F81CE4230600A15924 /* Info.plist */,
+				D587781A1CE614DE00A15924 /* PopViewController.swift */,
+				D587781B1CE614DE00A15924 /* PopViewController.xib */,
 			);
 			path = PopLax;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D587781D1CE614DE00A15924 /* PopViewController.xib in Resources */,
 				D58777F71CE4230600A15924 /* LaunchScreen.storyboard in Resources */,
 				D58777F41CE4230600A15924 /* Assets.xcassets in Resources */,
 				D58777F21CE4230600A15924 /* Main.storyboard in Resources */,
@@ -258,6 +265,7 @@
 			files = (
 				D58777EF1CE4230600A15924 /* ViewController.swift in Sources */,
 				D58777ED1CE4230600A15924 /* AppDelegate.swift in Sources */,
+				D587781C1CE614DE00A15924 /* PopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +490,7 @@
 				D58778131CE4230600A15924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D58778141CE4230600A15924 /* Build configuration list for PBXNativeTarget "PopLaxTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				D58778161CE4230600A15924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D58778171CE4230600A15924 /* Build configuration list for PBXNativeTarget "PopLaxUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				D58778191CE4230600A15924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
