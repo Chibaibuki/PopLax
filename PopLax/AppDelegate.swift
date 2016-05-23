@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MMDrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,11 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         let mainPopVc = PopViewController();
+        let leftVc = LeftViewController(nibName: "LeftViewController", bundle: nil);
 //        let mainPopVc = ViewController();
+        let mmDrawMain = MMDrawerController(centerViewController: mainPopVc, leftDrawerViewController:leftVc, rightDrawerViewController: nil);
+        mmDrawMain.showsShadow = false;
+        mmDrawMain.restorationIdentifier = "MM";
+        mmDrawMain.maximumRightDrawerWidth = 200.0;
+        mmDrawMain.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All;
+        mmDrawMain.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All;
+        
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds);
         self.window?.backgroundColor = UIColor.whiteColor();
-        self.window?.rootViewController = mainPopVc;
+        self.window?.rootViewController = mmDrawMain;
         
         self.window?.makeKeyAndVisible();
         

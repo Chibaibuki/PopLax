@@ -1,0 +1,6 @@
+framework module Pods_PopLax {
+  umbrella header "Pods-PopLax-umbrella.h"
+
+  export *
+  module * { export * }
+}
