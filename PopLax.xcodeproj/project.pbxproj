@@ -22,6 +22,7 @@
 		D58BE0A21CEF07FF00D1367D /* LeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58BE0A01CEF07FF00D1367D /* LeftTableViewCell.xib */; };
 		D5C2D2AA1CF2FBCB00B6EB51 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C2D2A81CF2FBCB00B6EB51 /* CommentViewController.swift */; };
 		D5C2D2AB1CF2FBCB00B6EB51 /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5C2D2A91CF2FBCB00B6EB51 /* CommentViewController.xib */; };
+		D5C2D2B11CF3294100B6EB51 /* popsound.wav in Resources */ = {isa = PBXBuildFile; fileRef = D5C2D2B01CF3294100B6EB51 /* popsound.wav */; };
 		FDF678DCBF9DAAC49B037DE3 /* Pods_PopLax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58B3BD697AB3CFCEC7BEAA35 /* Pods_PopLax.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		D58BE0A01CEF07FF00D1367D /* LeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftTableViewCell.xib; path = View/LeftTableViewCell.xib; sourceTree = "<group>"; };
 		D5C2D2A81CF2FBCB00B6EB51 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentViewController.swift; path = ViewController/CommentViewController.swift; sourceTree = "<group>"; };
 		D5C2D2A91CF2FBCB00B6EB51 /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CommentViewController.xib; path = ViewController/CommentViewController.xib; sourceTree = "<group>"; };
+		D5C2D2B01CF3294100B6EB51 /* popsound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = popsound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		D58777EB1CE4230600A15924 /* PopLax */ = {
 			isa = PBXGroup;
 			children = (
+				D5C2D2B01CF3294100B6EB51 /* popsound.wav */,
 				D58777EC1CE4230600A15924 /* AppDelegate.swift */,
 				D58777EE1CE4230600A15924 /* ViewController.swift */,
 				D58777F01CE4230600A15924 /* Main.storyboard */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C2D2B11CF3294100B6EB51 /* popsound.wav in Resources */,
 				D58BE0A21CEF07FF00D1367D /* LeftTableViewCell.xib in Resources */,
 				D587781D1CE614DE00A15924 /* PopViewController.xib in Resources */,
 				D58777F71CE4230600A15924 /* LaunchScreen.storyboard in Resources */,

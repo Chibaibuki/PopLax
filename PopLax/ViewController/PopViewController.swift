@@ -10,9 +10,13 @@ import UIKit
 import AudioToolbox
 class PopViewController: UIViewController {
     var finTheTouch = true;
+//    let url = NSBundle.mainBundle().pathForResource("popsound.m4a", withExtension: nil);
+
     @IBOutlet var popViews: [UIImageView]!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         
         // Do any additional setup after loading the view.
     }
@@ -61,14 +65,20 @@ class PopViewController: UIViewController {
      }
      */
     func pop(){
-        let x = arc4random() % 100;
-        if x>50 {
+//        let x = arc4random() % 100;
+//        if x>50 {
+        var soundID:SystemSoundID = 0;
+        let path = NSBundle.mainBundle().pathForResource("popsound", ofType: "wav");
+        AudioServicesCreateSystemSoundID(NSURL(fileURLWithPath: path!), &soundID);
             AudioServicesPlaySystemSound(1520);
-        }else if x<25{
-            AudioServicesPlaySystemSound(1521);
-        }else{
-            AudioServicesPlaySystemSound(1519);
-        }
+            AudioServicesPlaySystemSound(soundID);
+//        }else if x<25{
+//            AudioServicesPlaySystemSound(1521);
+//                        AudioServicesPlaySystemSound(0);
+//        }else{
+//            AudioServicesPlaySystemSound(1519);
+//                        AudioServicesPlaySystemSound(0);
+//        }
     }
     
 }
